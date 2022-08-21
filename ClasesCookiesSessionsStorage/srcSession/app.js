@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(session({
     //time to live
     store:MongoStore.create({
-        mongoUrl:'mongodb+srv://CoderUser:123@codercluster.w5adegs.mongodb.net/?retryWrites=true&w=majority',
+        mongoUrl:'AQUÍ TU URL DE MONGODB ATLAS',
         mongoOptions:{useNewUrlParser:true,useUnifiedTopology:true},
         ttl:10
     }), 

@@ -9,7 +9,7 @@ import session from 'express-session';
 
 const app = express();
 const server = app.listen(8080,()=>console.log("Listening :)"));
-const connection = mongoose.connect('mongodb+srv://CoderUser:123@codercluster.w5adegs.mongodb.net/coderBase?retryWrites=true&w=majority');
+const connection = mongoose.connect('AQUÍ TU URL DE MONGODB ATLAS');
 
 app.engine('handlebars',handlebars.engine());
 app.set('views',__dirname+'/views');

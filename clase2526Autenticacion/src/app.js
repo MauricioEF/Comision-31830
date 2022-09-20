@@ -11,14 +11,14 @@ import initializePassport from './config/passport.config.js';
 
 const app = express();
 const server = app.listen(8080,()=>console.log("Listening on port 8080"));
-const connection = mongoose.connect('URL DE MONGUITO')
+const connection = mongoose.connect('mongodb+srv://CoderUser:123@codercluster.w5adegs.mongodb.net/?retryWrites=true&w=majority')
 
 app.use(express.json());
 app.use(express.static(__dirname+'/public'));
 app.use(session({
     secret:"CoderSecretosoConquesoporfavorypapas",
     store:MongoStore.create({
-        mongoUrl:'URL DE MONGUITO',
+        mongoUrl:'mongodb+srv://CoderUser:123@codercluster.w5adegs.mongodb.net/?retryWrites=true&w=majority',
         mongoOptions:{useNewUrlParser:true,useUnifiedTopology:true},
         ttl:3600
     }),

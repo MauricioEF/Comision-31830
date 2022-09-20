@@ -1,0 +1,3 @@
+2022/09/17 13:29:11 [emerg] 15444#1568: unknown directive "try_file" in C:\nginx-1.23.1/conf/nginx.conf:30
+2022/09/17 13:29:14 [emerg] 14580#8816: unknown directive "try_file" in C:\nginx-1.23.1/conf/nginx.conf:30
+2022/09/17 13:39:59 [notice] 11988#9672: signal process started

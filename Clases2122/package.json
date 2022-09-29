@@ -1,0 +1,19 @@
+{
+  "name": "clases2122",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexTDD.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon srcFaker/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "faker": "^5.5.3"
+  }
+}

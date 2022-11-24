@@ -3,7 +3,7 @@ import User from './User.js';
 
 export default class Dao {
     constructor(){
-        this.connection = mongoose.connect('MONGUITO URL');
+        this.connection = mongoose.connect('mongodb+srv://CoderUser:123@codercluster.w5adegs.mongodb.net/?retryWrites=true&w=majority');
         const timestamps = {timestamps:{'createdAt':'created_at','updatedAt':'updated_at'}};
         
         const userSchema = mongoose.Schema(User.schema,timestamps);

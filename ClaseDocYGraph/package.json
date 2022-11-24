@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/app.js",
+    "build:doc":"swagger-cli bundle src/docs/users.yaml --outfile _build/openapi.yaml --type yaml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,5 +19,8 @@
     "mongoose": "^6.7.2",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "swagger-cli": "^4.0.4"
   }
 }

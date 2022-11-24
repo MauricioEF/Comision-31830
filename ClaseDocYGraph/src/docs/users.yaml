@@ -38,6 +38,7 @@ components:
         name: Veronica Vipputo
         email: correoVero@correo.com
         password: 1asd391asc391%
+
 paths:
   /api/users/:
     get:
@@ -66,4 +67,23 @@ paths:
       responses:
         "200":
           description: El usuario se agregó satisfactoriamente
+  /api/users/{uid}:
+    get:
+      summary: Devuelve información de un usuario en específico
+      tags:
+        - Users
+      parameters:
+      - name: uid
+        in: path
+        required: true
+        description: Id referente al usuario
+        schema:
+          type: string
+      responses:
+        "200":
+          description: El usuario fue encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
           
